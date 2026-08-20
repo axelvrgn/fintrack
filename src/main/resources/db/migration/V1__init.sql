@@ -1,0 +1,1 @@
+-- Initial migration: sets up Flyway tracking for the FinTrack schema
