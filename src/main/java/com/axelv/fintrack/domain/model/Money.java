@@ -21,7 +21,28 @@ public class Money {
         this.currency = currency;
     }
 
+    public static Money of(BigDecimal value, String currency) {
+        return new Money(value, currency);
+    }
+
     public static Money zero(String currency) {
         return new Money(BigDecimal.ZERO, currency);
+    }
+
+
+    public BigDecimal getValue() {
+        return value;
+    }
+
+    public void setValue(BigDecimal value) {
+        this.value = value;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
     }
 }
